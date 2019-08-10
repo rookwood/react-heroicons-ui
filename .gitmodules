@@ -1,0 +1,3 @@
+[submodule "lib/src/heroicons-ui"]
+	path = lib/heroicons-ui
+	url = https://github.com/sschoger/heroicons-ui

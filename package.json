@@ -1,8 +1,0 @@
-{
-  "name": "react-heroicons-ui",
-  "version": "1.0.0",
-  "description": "React components for Steve Schroger's heroicons-ui",
-  "main": "index.js",
-  "author": "Adam Hammes <adam@hammes.io>",
-  "license": "MIT"
-}
