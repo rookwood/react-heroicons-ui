@@ -27,9 +27,3 @@ const YourComponent = () => <IconThumbsUp height={40} fill="rebeccapurple" />;
 ## Props
 
 All props are given directly to the outputted SVG.
-
-## Changes from the original icons
-
-The original icons all have `class="heroicons-ui"` set on the inner `<path>` of
-the icons. This class has been removed in order to give complete control of the
-props to ther end-user and minimize bundle size.
