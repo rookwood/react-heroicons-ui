@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const IconAnnouncement = props => (
+const IconAnnouncement = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -9,7 +9,7 @@ const IconAnnouncement = props => (
   </svg>
 );
 
-const IconArchive = props => (
+const IconArchive = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -18,7 +18,7 @@ const IconArchive = props => (
   </svg>
 );
 
-const IconArrowDown = props => (
+const IconArrowDown = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -27,7 +27,7 @@ const IconArrowDown = props => (
   </svg>
 );
 
-const IconArrowLeft = props => (
+const IconArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -36,7 +36,7 @@ const IconArrowLeft = props => (
   </svg>
 );
 
-const IconArrowRight = props => (
+const IconArrowRight = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -45,7 +45,7 @@ const IconArrowRight = props => (
   </svg>
 );
 
-const IconArrowUp = props => (
+const IconArrowUp = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -54,7 +54,7 @@ const IconArrowUp = props => (
   </svg>
 );
 
-const IconAtSymbol = props => (
+const IconAtSymbol = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -63,7 +63,7 @@ const IconAtSymbol = props => (
   </svg>
 );
 
-const IconBook = props => (
+const IconBook = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -72,7 +72,7 @@ const IconBook = props => (
   </svg>
 );
 
-const IconBookmark = props => (
+const IconBookmark = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -81,7 +81,7 @@ const IconBookmark = props => (
   </svg>
 );
 
-const IconBriefcase = props => (
+const IconBriefcase = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -90,7 +90,7 @@ const IconBriefcase = props => (
   </svg>
 );
 
-const IconBrowser = props => (
+const IconBrowser = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -99,7 +99,7 @@ const IconBrowser = props => (
   </svg>
 );
 
-const IconBuilding = props => (
+const IconBuilding = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -108,7 +108,7 @@ const IconBuilding = props => (
   </svg>
 );
 
-const IconCalander = props => (
+const IconCalander = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -117,7 +117,7 @@ const IconCalander = props => (
   </svg>
 );
 
-const IconCallIncoming = props => (
+const IconCallIncoming = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -126,7 +126,7 @@ const IconCallIncoming = props => (
   </svg>
 );
 
-const IconCallOutgoing = props => (
+const IconCallOutgoing = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -135,7 +135,7 @@ const IconCallOutgoing = props => (
   </svg>
 );
 
-const IconCall = props => (
+const IconCall = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -144,7 +144,7 @@ const IconCall = props => (
   </svg>
 );
 
-const IconCamera = props => (
+const IconCamera = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -153,7 +153,7 @@ const IconCamera = props => (
   </svg>
 );
 
-const IconCart = props => (
+const IconCart = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -162,7 +162,7 @@ const IconCart = props => (
   </svg>
 );
 
-const IconChat = props => (
+const IconChat = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -171,7 +171,7 @@ const IconChat = props => (
   </svg>
 );
 
-const IconCheckCircle = props => (
+const IconCheckCircle = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -180,7 +180,7 @@ const IconCheckCircle = props => (
   </svg>
 );
 
-const IconCheveronDown = props => (
+const IconCheveronDown = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -189,7 +189,7 @@ const IconCheveronDown = props => (
   </svg>
 );
 
-const IconCheveronLeft = props => (
+const IconCheveronLeft = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -198,7 +198,7 @@ const IconCheveronLeft = props => (
   </svg>
 );
 
-const IconCheveronRight = props => (
+const IconCheveronRight = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -207,7 +207,7 @@ const IconCheveronRight = props => (
   </svg>
 );
 
-const IconCheveronUp = props => (
+const IconCheveronUp = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -216,7 +216,7 @@ const IconCheveronUp = props => (
   </svg>
 );
 
-const IconClip = props => (
+const IconClip = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -225,7 +225,7 @@ const IconClip = props => (
   </svg>
 );
 
-const IconClipboard = props => (
+const IconClipboard = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -234,7 +234,7 @@ const IconClipboard = props => (
   </svg>
 );
 
-const IconClock = props => (
+const IconClock = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -243,7 +243,7 @@ const IconClock = props => (
   </svg>
 );
 
-const IconCode = props => (
+const IconCode = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -252,7 +252,7 @@ const IconCode = props => (
   </svg>
 );
 
-const IconCog = props => (
+const IconCog = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -261,7 +261,7 @@ const IconCog = props => (
   </svg>
 );
 
-const IconComment = props => (
+const IconComment = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -270,7 +270,7 @@ const IconComment = props => (
   </svg>
 );
 
-const IconCompass = props => (
+const IconCompass = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -279,7 +279,7 @@ const IconCompass = props => (
   </svg>
 );
 
-const IconCurrencyDollar = props => (
+const IconCurrencyDollar = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -288,7 +288,7 @@ const IconCurrencyDollar = props => (
   </svg>
 );
 
-const IconDashboard = props => (
+const IconDashboard = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -297,7 +297,7 @@ const IconDashboard = props => (
   </svg>
 );
 
-const IconDesktop = props => (
+const IconDesktop = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -306,7 +306,7 @@ const IconDesktop = props => (
   </svg>
 );
 
-const IconDiscount = props => (
+const IconDiscount = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -315,7 +315,7 @@ const IconDiscount = props => (
   </svg>
 );
 
-const IconDownload = props => (
+const IconDownload = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -324,7 +324,7 @@ const IconDownload = props => (
   </svg>
 );
 
-const IconDuplicate = props => (
+const IconDuplicate = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -333,7 +333,7 @@ const IconDuplicate = props => (
   </svg>
 );
 
-const IconEdit = props => (
+const IconEdit = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -342,7 +342,7 @@ const IconEdit = props => (
   </svg>
 );
 
-const IconEmotionHappy = props => (
+const IconEmotionHappy = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -351,7 +351,7 @@ const IconEmotionHappy = props => (
   </svg>
 );
 
-const IconEmotionSad = props => (
+const IconEmotionSad = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -360,7 +360,7 @@ const IconEmotionSad = props => (
   </svg>
 );
 
-const IconExclamation = props => (
+const IconExclamation = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -369,7 +369,7 @@ const IconExclamation = props => (
   </svg>
 );
 
-const IconExternalLink = props => (
+const IconExternalLink = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -378,7 +378,7 @@ const IconExternalLink = props => (
   </svg>
 );
 
-const IconFileBlank = props => (
+const IconFileBlank = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -387,7 +387,7 @@ const IconFileBlank = props => (
   </svg>
 );
 
-const IconFileMinus = props => (
+const IconFileMinus = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -396,7 +396,7 @@ const IconFileMinus = props => (
   </svg>
 );
 
-const IconFilePlus = props => (
+const IconFilePlus = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -405,7 +405,7 @@ const IconFilePlus = props => (
   </svg>
 );
 
-const IconFile = props => (
+const IconFile = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -414,7 +414,7 @@ const IconFile = props => (
   </svg>
 );
 
-const IconFilm = props => (
+const IconFilm = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -423,7 +423,7 @@ const IconFilm = props => (
   </svg>
 );
 
-const IconFilter = props => (
+const IconFilter = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -432,7 +432,7 @@ const IconFilter = props => (
   </svg>
 );
 
-const IconFlag = props => (
+const IconFlag = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -441,7 +441,7 @@ const IconFlag = props => (
   </svg>
 );
 
-const IconFolderMinus = props => (
+const IconFolderMinus = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -450,7 +450,7 @@ const IconFolderMinus = props => (
   </svg>
 );
 
-const IconFolderPlus = props => (
+const IconFolderPlus = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -459,7 +459,7 @@ const IconFolderPlus = props => (
   </svg>
 );
 
-const IconFolder = props => (
+const IconFolder = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -468,7 +468,7 @@ const IconFolder = props => (
   </svg>
 );
 
-const IconGlobe = props => (
+const IconGlobe = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -477,7 +477,7 @@ const IconGlobe = props => (
   </svg>
 );
 
-const IconGraphBar = props => (
+const IconGraphBar = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -486,7 +486,7 @@ const IconGraphBar = props => (
   </svg>
 );
 
-const IconGrid = props => (
+const IconGrid = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -495,7 +495,7 @@ const IconGrid = props => (
   </svg>
 );
 
-const IconGroup = props => (
+const IconGroup = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -504,7 +504,7 @@ const IconGroup = props => (
   </svg>
 );
 
-const IconHashtag = props => (
+const IconHashtag = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -513,7 +513,7 @@ const IconHashtag = props => (
   </svg>
 );
 
-const IconHeart = props => (
+const IconHeart = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -522,7 +522,7 @@ const IconHeart = props => (
   </svg>
 );
 
-const IconHelp = props => (
+const IconHelp = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -531,7 +531,7 @@ const IconHelp = props => (
   </svg>
 );
 
-const IconHome = props => (
+const IconHome = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -540,7 +540,7 @@ const IconHome = props => (
   </svg>
 );
 
-const IconImage = props => (
+const IconImage = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -549,7 +549,7 @@ const IconImage = props => (
   </svg>
 );
 
-const IconInbox = props => (
+const IconInbox = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -558,7 +558,7 @@ const IconInbox = props => (
   </svg>
 );
 
-const IconInformation = props => (
+const IconInformation = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -567,7 +567,7 @@ const IconInformation = props => (
   </svg>
 );
 
-const IconKey = props => (
+const IconKey = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -576,7 +576,7 @@ const IconKey = props => (
   </svg>
 );
 
-const IconLink = props => (
+const IconLink = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -585,7 +585,7 @@ const IconLink = props => (
   </svg>
 );
 
-const IconLocation = props => (
+const IconLocation = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -594,7 +594,7 @@ const IconLocation = props => (
   </svg>
 );
 
-const IconLockClosed = props => (
+const IconLockClosed = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -603,7 +603,7 @@ const IconLockClosed = props => (
   </svg>
 );
 
-const IconLockOpen = props => (
+const IconLockOpen = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -612,7 +612,7 @@ const IconLockOpen = props => (
   </svg>
 );
 
-const IconMail = props => (
+const IconMail = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -621,7 +621,7 @@ const IconMail = props => (
   </svg>
 );
 
-const IconMap = props => (
+const IconMap = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -630,7 +630,7 @@ const IconMap = props => (
   </svg>
 );
 
-const IconMenu = props => (
+const IconMenu = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -639,7 +639,7 @@ const IconMenu = props => (
   </svg>
 );
 
-const IconMicrophone = props => (
+const IconMicrophone = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -648,7 +648,7 @@ const IconMicrophone = props => (
   </svg>
 );
 
-const IconMinusCircle = props => (
+const IconMinusCircle = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -657,7 +657,7 @@ const IconMinusCircle = props => (
   </svg>
 );
 
-const IconMinusSquare = props => (
+const IconMinusSquare = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -666,7 +666,7 @@ const IconMinusSquare = props => (
   </svg>
 );
 
-const IconMinus = props => (
+const IconMinus = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -675,7 +675,7 @@ const IconMinus = props => (
   </svg>
 );
 
-const IconMobile = props => (
+const IconMobile = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -684,7 +684,7 @@ const IconMobile = props => (
   </svg>
 );
 
-const IconMoon = props => (
+const IconMoon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -693,7 +693,7 @@ const IconMoon = props => (
   </svg>
 );
 
-const IconMoreHoriz = props => (
+const IconMoreHoriz = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -702,7 +702,7 @@ const IconMoreHoriz = props => (
   </svg>
 );
 
-const IconMusic = props => (
+const IconMusic = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -711,7 +711,7 @@ const IconMusic = props => (
   </svg>
 );
 
-const IconNews = props => (
+const IconNews = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -720,7 +720,7 @@ const IconNews = props => (
   </svg>
 );
 
-const IconNotification = props => (
+const IconNotification = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -729,7 +729,7 @@ const IconNotification = props => (
   </svg>
 );
 
-const IconPlusCircle = props => (
+const IconPlusCircle = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -738,7 +738,7 @@ const IconPlusCircle = props => (
   </svg>
 );
 
-const IconPlusSquare = props => (
+const IconPlusSquare = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -747,7 +747,7 @@ const IconPlusSquare = props => (
   </svg>
 );
 
-const IconPlus = props => (
+const IconPlus = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -756,7 +756,7 @@ const IconPlus = props => (
   </svg>
 );
 
-const IconPrint = props => (
+const IconPrint = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -765,7 +765,7 @@ const IconPrint = props => (
   </svg>
 );
 
-const IconPuzzle = props => (
+const IconPuzzle = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -774,7 +774,7 @@ const IconPuzzle = props => (
   </svg>
 );
 
-const IconRefresh = props => (
+const IconRefresh = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -783,7 +783,7 @@ const IconRefresh = props => (
   </svg>
 );
 
-const IconRepeat = props => (
+const IconRepeat = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -792,7 +792,7 @@ const IconRepeat = props => (
   </svg>
 );
 
-const IconRocket = props => (
+const IconRocket = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -801,7 +801,7 @@ const IconRocket = props => (
   </svg>
 );
 
-const IconSearch = props => (
+const IconSearch = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -810,7 +810,7 @@ const IconSearch = props => (
   </svg>
 );
 
-const IconServer = props => (
+const IconServer = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -819,7 +819,7 @@ const IconServer = props => (
   </svg>
 );
 
-const IconSpeaker = props => (
+const IconSpeaker = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -828,7 +828,7 @@ const IconSpeaker = props => (
   </svg>
 );
 
-const IconStar = props => (
+const IconStar = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -837,7 +837,7 @@ const IconStar = props => (
   </svg>
 );
 
-const IconStore = props => (
+const IconStore = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -846,7 +846,7 @@ const IconStore = props => (
   </svg>
 );
 
-const IconTablet = props => (
+const IconTablet = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -855,7 +855,7 @@ const IconTablet = props => (
   </svg>
 );
 
-const IconTag = props => (
+const IconTag = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -864,7 +864,7 @@ const IconTag = props => (
   </svg>
 );
 
-const IconThumbDown = props => (
+const IconThumbDown = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -873,7 +873,7 @@ const IconThumbDown = props => (
   </svg>
 );
 
-const IconThumbUp = props => (
+const IconThumbUp = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -882,7 +882,7 @@ const IconThumbUp = props => (
   </svg>
 );
 
-const IconTrash = props => (
+const IconTrash = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -891,7 +891,7 @@ const IconTrash = props => (
   </svg>
 );
 
-const IconTrendingDown = props => (
+const IconTrendingDown = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -900,7 +900,7 @@ const IconTrendingDown = props => (
   </svg>
 );
 
-const IconTrendingUp = props => (
+const IconTrendingUp = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -909,7 +909,7 @@ const IconTrendingUp = props => (
   </svg>
 );
 
-const IconTrophy = props => (
+const IconTrophy = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -918,7 +918,7 @@ const IconTrophy = props => (
   </svg>
 );
 
-const IconUpload = props => (
+const IconUpload = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -927,7 +927,7 @@ const IconUpload = props => (
   </svg>
 );
 
-const IconUserCheck = props => (
+const IconUserCheck = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -936,7 +936,7 @@ const IconUserCheck = props => (
   </svg>
 );
 
-const IconUserMinus = props => (
+const IconUserMinus = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -945,7 +945,7 @@ const IconUserMinus = props => (
   </svg>
 );
 
-const IconUserPlus = props => (
+const IconUserPlus = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -954,7 +954,7 @@ const IconUserPlus = props => (
   </svg>
 );
 
-const IconUser = props => (
+const IconUser = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -963,7 +963,7 @@ const IconUser = props => (
   </svg>
 );
 
-const IconVideo = props => (
+const IconVideo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -972,7 +972,7 @@ const IconVideo = props => (
   </svg>
 );
 
-const IconView = props => (
+const IconView = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -981,7 +981,7 @@ const IconView = props => (
   </svg>
 );
 
-const IconXCircle = props => (
+const IconXCircle = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -990,7 +990,7 @@ const IconXCircle = props => (
   </svg>
 );
 
-const IconXSquare = props => (
+const IconXSquare = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -999,7 +999,7 @@ const IconXSquare = props => (
   </svg>
 );
 
-const IconX = props => (
+const IconX = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -1008,7 +1008,7 @@ const IconX = props => (
   </svg>
 );
 
-const IconZoomIn = props => (
+const IconZoomIn = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -1017,7 +1017,7 @@ const IconZoomIn = props => (
   </svg>
 );
 
-const IconZoomOut = props => (
+const IconZoomOut = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={24} height={24} {...props}>
     <path
       className="prefix__heroicon-ui"
@@ -1025,6 +1025,7 @@ const IconZoomOut = props => (
     />
   </svg>
 );
+
 
 export {
 IconAnnouncement,
