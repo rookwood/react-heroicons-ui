@@ -7,8 +7,10 @@ import libPackageJson from "../../../lib/package.json";
 import Searcher from "../utils/search";
 
 const inputContainerCss = css`
-  text-align: center;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const listCss = css`
@@ -70,7 +72,15 @@ export default () => {
     <div>
       <Seo />
       <div css={inputContainerCss}>
-        <input value={searchText} onChange={onInputChange} type="text" />
+        <label for="iconSearch">
+          <h2>Search available icons:</h2>
+        </label>
+        <input
+          value={searchText}
+          id="iconSearch"
+          onChange={onInputChange}
+          type="text"
+        />
       </div>
       <ul css={listCss}>
         {displayedResults.map(iconName => (
