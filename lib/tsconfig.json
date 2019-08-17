@@ -4,9 +4,10 @@
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitUseStrict": true,
     "removeComments": true,
     "declaration": true,
-    "strict": true,
     "jsx": "react",
     "lib": ["es2015", "dom"]
   },

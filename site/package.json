@@ -13,10 +13,14 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@emotion/core": "^10.0.15",
+    "fuse.js": "^3.4.5",
     "gatsby": "^2.13.57",
+    "gatsby-plugin-emotion": "^4.1.2",
+    "normalize.css": "^8.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-heroicons-ui": "file:../lib/"
+    "react-heroicons-ui": "file:../lib"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

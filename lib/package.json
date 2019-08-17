@@ -1,12 +1,13 @@
 {
   "name": "react-heroicons-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React components for Steve Schroger's heroicons-ui",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Adam Hammes <adam@hammes.io>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "tsc"
   },
   "peerDependencies": {
     "react": "^16.0.0",
