@@ -1,7 +1,9 @@
 import React, { useState, useMemo } from "react";
 import * as icons from "react-heroicons-ui";
 import { css } from "@emotion/core";
+import { Helmet } from "react-helmet-async";
 
+import libPackageJson from "../../../lib/package.json";
 import Searcher from "../utils/search";
 
 const inputContainerCss = css`
@@ -39,6 +41,13 @@ const IconCard = ({ iconName }) => {
   );
 };
 
+const Seo = () => (
+  <Helmet htmlAttributes={{ lang: "en-US" }}>
+    <title>react-heroicons-ui</title>
+    <meta name="description" content={libPackageJson.description} />
+  </Helmet>
+);
+
 export default () => {
   const allIconNames = Object.keys(icons);
 
@@ -59,6 +68,7 @@ export default () => {
 
   return (
     <div>
+      <Seo />
       <div css={inputContainerCss}>
         <input value={searchText} onChange={onInputChange} type="text" />
       </div>
