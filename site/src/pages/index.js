@@ -77,16 +77,13 @@ export default () => {
 
   const [searchText, setSearchText] = useState("");
 
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState(allIconNames);
   const onInputChange = event => {
     const text = event.target.value;
     setSearchResults(searcher.search(text));
 
     setSearchText(text);
   };
-
-  const displayedResults =
-    searchResults.length > 0 ? searchResults : allIconNames;
 
   return (
     <div>
@@ -106,7 +103,7 @@ export default () => {
         </span>
       </div>
       <ul css={listCss}>
-        {displayedResults.map(iconName => (
+        {searchResults.map(iconName => (
           <li key={iconName}>
             <IconCard iconName={iconName} />
           </li>

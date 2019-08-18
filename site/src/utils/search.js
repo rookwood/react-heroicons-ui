@@ -12,6 +12,10 @@ export default class Searcher {
   }
 
   search(term) {
+    if (term == "") {
+      return this.searchTerms;
+    }
+
     const resultIndices = new Set(this.fuse.search(term));
     return this.searchTerms.filter((_, index) => resultIndices.has(index));
   }
