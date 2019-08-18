@@ -89,7 +89,7 @@ export default () => {
     <div>
       <Seo />
       <div css={inputContainerCss}>
-        <label for="iconSearch">
+        <label htmlFor="iconSearch">
           <h2>Search available icons:</h2>
         </label>
         <span css={inputWrapperCss}>
