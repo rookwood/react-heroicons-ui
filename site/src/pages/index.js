@@ -13,6 +13,26 @@ const inputContainerCss = css`
   align-items: center;
 `;
 
+const inputWrapperCss = css`
+  background: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(204, 204, 204);
+
+  &:focus-within {
+    border-color: rgb(38, 132, 255);
+  }
+`;
+
+const inputCss = css`
+  -webkit-appearance: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
 const listCss = css`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -75,12 +95,15 @@ export default () => {
         <label for="iconSearch">
           <h2>Search available icons:</h2>
         </label>
-        <input
-          value={searchText}
-          id="iconSearch"
-          onChange={onInputChange}
-          type="text"
-        />
+        <span css={inputWrapperCss}>
+          <input
+            value={searchText}
+            id="iconSearch"
+            onChange={onInputChange}
+            type="text"
+            css={inputCss}
+          />
+        </span>
       </div>
       <ul css={listCss}>
         {displayedResults.map(iconName => (
