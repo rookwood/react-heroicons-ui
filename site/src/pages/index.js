@@ -1,10 +1,11 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef, useCallback } from "react";
 import * as icons from "react-heroicons-ui";
 import { css } from "@emotion/core";
 import { Helmet } from "react-helmet-async";
 
 import libPackageJson from "../../../lib/package.json";
 import Searcher from "../utils/search";
+import useKeyboardShortcut from "../utils/useKeyboardShortcut";
 
 const inputContainerCss = css`
   margin-bottom: 2rem;
@@ -27,6 +28,7 @@ const inputWrapperCss = css`
 const inputCss = css`
   -webkit-appearance: none;
   border: none;
+  min-width: 200px;
 
   &:focus {
     outline: none;
@@ -72,6 +74,10 @@ const Seo = () => (
 
 export default () => {
   const allIconNames = Object.keys(icons);
+  const inputRef = useRef(null);
+
+  const onSlash = useCallback(() => inputRef.current.focus(), [inputRef]);
+  useKeyboardShortcut(191, onSlash);
 
   const searcher = useMemo(() => new Searcher(allIconNames));
 
@@ -99,6 +105,8 @@ export default () => {
             onChange={onInputChange}
             type="text"
             css={inputCss}
+            placeholder={`Press "/" to focus`}
+            ref={inputRef}
           />
         </span>
       </div>
