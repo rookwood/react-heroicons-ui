@@ -1,22 +1,26 @@
-import Fuse from "fuse.js";
+const normalizeText = string => 
+  string.replace(/[^A-Za-z]/g, "").toLowerCase();
 
 export default class Searcher {
   constructor(searchTerms) {
-    this.searchTerms = searchTerms;
 
-    const fuseOptions = {
-      threshold: 0.1,
-      tokenize: true
-    };
-    this.fuse = new Fuse(searchTerms, fuseOptions);
+    this.searchTerms = {};
+
+    searchTerms.forEach(term => this.searchTerms[term] = normalizeText(term));
   }
 
   search(term) {
-    if (term == "") {
-      return this.searchTerms;
+    if (typeof term != "string") {
+      return [];
     }
 
-    const resultIndices = new Set(this.fuse.search(term));
-    return this.searchTerms.filter((_, index) => resultIndices.has(index));
+    if (term == "") {
+      return Object.keys(this.searchTerms);
+    }
+
+    const normalized = normalizeText(term);
+
+    return Object.entries(this.searchTerms).filter(([_, term]) => term.indexOf(normalized) > -1)
+      .map(([original, _]) => original);
   }
 }
