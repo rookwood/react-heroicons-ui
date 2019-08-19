@@ -20,6 +20,22 @@ const inputWrapperCss = css`
   border-radius: 0.25rem;
   border: 1px solid rgb(204, 204, 204);
 
+  position: relative;
+
+  svg {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgb(117, 117, 117);
+  }
+
+  input {
+    margin: 0 0 0 1.4rem;
+    display: inline-block;
+  }
+
   &:focus-within {
     border-color: rgb(38, 132, 255);
   }
@@ -91,6 +107,8 @@ export default () => {
     setSearchText(text);
   };
 
+  const IconSearch = icons.IconSearch;
+
   return (
     <div>
       <Seo />
@@ -99,6 +117,7 @@ export default () => {
           <h2>Search available icons:</h2>
         </label>
         <span css={inputWrapperCss}>
+          <IconSearch />
           <input
             value={searchText}
             id="iconSearch"
