@@ -1,12 +1,10 @@
-const normalizeText = string => 
-  string.replace(/[^A-Za-z]/g, "").toLowerCase();
+const normalizeText = string => string.replace(/[^A-Za-z]/g, "").toLowerCase();
 
 export default class Searcher {
   constructor(searchTerms) {
-
     this.searchTerms = {};
 
-    searchTerms.forEach(term => this.searchTerms[term] = normalizeText(term));
+    searchTerms.forEach(term => (this.searchTerms[term] = normalizeText(term)));
   }
 
   search(term) {
@@ -20,7 +18,8 @@ export default class Searcher {
 
     const normalized = normalizeText(term);
 
-    return Object.entries(this.searchTerms).filter(([_, term]) => term.indexOf(normalized) > -1)
+    return Object.entries(this.searchTerms)
+      .filter(([_, term]) => term.indexOf(normalized) > -1)
       .map(([original, _]) => original);
   }
 }
