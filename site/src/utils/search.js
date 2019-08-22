@@ -14,7 +14,7 @@ export default class Searcher {
       return [];
     }
 
-    if (term == "") {
+    if (term === "") {
       return Object.keys(this.searchTerms);
     }
 
