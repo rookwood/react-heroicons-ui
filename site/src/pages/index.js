@@ -7,6 +7,19 @@ import libPackageJson from "../../../lib/package.json";
 import Searcher from "../utils/search";
 import useKeyboardShortcut from "../utils/useKeyboardShortcut";
 
+const themeColor = `rgb(38, 132, 255)`;
+
+const topColorStripeCss = css`
+  width: 100%;
+  height: 2px;
+
+  background: ${themeColor};
+`;
+
+const pageContainerStyles = css`
+  padding: 2rem;
+`;
+
 const inputContainerCss = css`
   margin-bottom: 2rem;
   display: flex;
@@ -37,7 +50,7 @@ const inputWrapperCss = css`
   }
 
   &:focus-within {
-    border-color: rgb(38, 132, 255);
+    border-color: ${themeColor};
   }
 `;
 
@@ -110,32 +123,35 @@ export default () => {
   const IconSearch = icons.IconSearch;
 
   return (
-    <div>
-      <Seo />
-      <div css={inputContainerCss}>
-        <label htmlFor="iconSearch">
-          <h2>Search available icons:</h2>
-        </label>
-        <span css={inputWrapperCss}>
-          <IconSearch />
-          <input
-            value={searchText}
-            id="iconSearch"
-            onChange={onInputChange}
-            type="text"
-            css={inputCss}
-            placeholder={`Press "/" to focus`}
-            ref={inputRef}
-          />
-        </span>
+    <>
+      <div css={topColorStripeCss} />
+      <div css={pageContainerStyles}>
+        <Seo />
+        <div css={inputContainerCss}>
+          <label htmlFor="iconSearch">
+            <h2>Search available icons:</h2>
+          </label>
+          <span css={inputWrapperCss}>
+            <IconSearch />
+            <input
+              value={searchText}
+              id="iconSearch"
+              onChange={onInputChange}
+              type="text"
+              css={inputCss}
+              placeholder={`Press "/" to focus`}
+              ref={inputRef}
+            />
+          </span>
+        </div>
+        <ul css={listCss}>
+          {searchResults.map(iconName => (
+            <li key={iconName}>
+              <IconCard iconName={iconName} />
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul css={listCss}>
-        {searchResults.map(iconName => (
-          <li key={iconName}>
-            <IconCard iconName={iconName} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    </>
   );
 };
