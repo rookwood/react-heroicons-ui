@@ -1,13 +1,14 @@
-import React, { useState, useMemo, useRef, useCallback } from "react";
+import React, { useState, useMemo } from "react";
 import * as icons from "react-heroicons-ui";
 import { css } from "@emotion/core";
 import { Helmet } from "react-helmet-async";
 
 import libPackageJson from "../../../lib/package.json";
 import Searcher from "../utils/search";
-import useKeyboardShortcut from "../utils/useKeyboardShortcut";
 import IconCard from "../components/IconCard";
+import SearchInput from "../components/SearchInput";
 
+const allIconNames = Object.keys(icons);
 const themeColor = `rgb(38, 132, 255)`;
 
 const topColorStripeCss = css`
@@ -19,50 +20,6 @@ const topColorStripeCss = css`
 
 const pageContainerStyles = css`
   padding: 2rem;
-`;
-
-const inputContainerCss = css`
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const inputWrapperCss = css`
-  background: white;
-  padding: 0.4rem 0.6rem;
-  border-radius: 0.25rem;
-  border: 1px solid rgb(204, 204, 204);
-
-  position: relative;
-
-  svg {
-    position: absolute;
-    height: 1rem;
-    width: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    fill: rgb(117, 117, 117);
-  }
-
-  input {
-    margin: 0 0 0 1.4rem;
-    display: inline-block;
-  }
-
-  &:focus-within {
-    border-color: ${themeColor};
-  }
-`;
-
-const inputCss = css`
-  -webkit-appearance: none;
-  border: none;
-  min-width: 200px;
-
-  &:focus {
-    outline: none;
-  }
 `;
 
 const listCss = css`
@@ -82,48 +39,24 @@ const Seo = () => (
 );
 
 export default () => {
-  const allIconNames = Object.keys(icons);
-  const inputRef = useRef(null);
-
-  const onSlash = useCallback(() => inputRef.current.focus(), [inputRef]);
-  useKeyboardShortcut(191, onSlash);
-
   const searcher = useMemo(() => new Searcher(allIconNames));
 
   const [searchText, setSearchText] = useState("");
-
   const [searchResults, setSearchResults] = useState(allIconNames);
+
   const onInputChange = event => {
     const text = event.target.value;
-    setSearchResults(searcher.search(text));
 
+    setSearchResults(searcher.search(text));
     setSearchText(text);
   };
 
-  const IconSearch = icons.IconSearch;
-
   return (
     <>
+      <Seo />
       <div css={topColorStripeCss} />
       <div css={pageContainerStyles}>
-        <Seo />
-        <div css={inputContainerCss}>
-          <label htmlFor="iconSearch">
-            <h2>Search available icons:</h2>
-          </label>
-          <span css={inputWrapperCss}>
-            <IconSearch />
-            <input
-              value={searchText}
-              id="iconSearch"
-              onChange={onInputChange}
-              type="text"
-              css={inputCss}
-              placeholder={`Press "/" to focus`}
-              ref={inputRef}
-            />
-          </span>
-        </div>
+        <SearchInput value={searchText} onChange={onInputChange} />
         <ul css={listCss}>
           {searchResults.map(iconName => (
             <li key={iconName}>
