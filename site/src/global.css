@@ -20,3 +20,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: rgb(26, 32, 44);
 }
+
+code {
+  font-family: "Inconsolata";
+  letter-spacing: 0.2px;
+}
