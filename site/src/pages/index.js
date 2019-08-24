@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import libPackageJson from "../../../lib/package.json";
 import Searcher from "../utils/search";
 import useKeyboardShortcut from "../utils/useKeyboardShortcut";
+import IconCard from "../components/IconCard";
 
 const themeColor = `rgb(38, 132, 255)`;
 
@@ -72,27 +73,6 @@ const listCss = css`
   padding: 0;
   list-style-type: none;
 `;
-
-const cardCss = css`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  svg {
-    margin-bottom: 1rem;
-  }
-`;
-
-const IconCard = ({ iconName }) => {
-  const Icon = icons[iconName];
-
-  return (
-    <div css={cardCss}>
-      <Icon height={60} width={60} />
-      <div>{iconName}</div>
-    </div>
-  );
-};
 
 const Seo = () => (
   <Helmet htmlAttributes={{ lang: "en-US" }}>
