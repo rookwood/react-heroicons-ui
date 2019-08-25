@@ -50,11 +50,25 @@ const inputCss = css`
   }
 `;
 
-const SearchInput = ({ onChange, value }) => {
+const SearchInput = ({ enabled, onChange, value }) => {
   const inputRef = useRef(null);
-  const onSlash = useCallback(() => inputRef.current.focus(), [inputRef]);
+
+  const onSlash = useCallback(() => {
+    if (enabled) {
+      inputRef.current.focus();
+    }
+  }, [inputRef, enabled]);
 
   useKeyboardShortcut(191, onSlash);
+
+  const onInputChange = useCallback(
+    event => {
+      if (enabled) {
+        onChange(event);
+      }
+    },
+    [enabled, onChange]
+  );
 
   return (
     <div css={inputContainerCss}>
@@ -66,7 +80,7 @@ const SearchInput = ({ onChange, value }) => {
         <input
           value={value}
           id="iconSearch"
-          onChange={onChange}
+          onChange={onInputChange}
           type="text"
           css={inputCss}
           placeholder={`Press "/" to focus`}

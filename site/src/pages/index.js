@@ -59,7 +59,11 @@ export default () => {
       <Seo />
       <div css={topColorStripeCss} />
       <div css={pageContainerStyles}>
-        <SearchInput value={searchText} onChange={onInputChange} />
+        <SearchInput
+          value={searchText}
+          onChange={onInputChange}
+          enabled={activeIcon == null}
+        />
         <ul css={listCss}>
           {searchResults.map(iconName => (
             <li key={iconName}>
