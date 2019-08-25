@@ -27,6 +27,7 @@
     "react-dom": "^16.9.0",
     "react-helmet-async": "^1.0.2",
     "react-heroicons-ui": "^1.0.2",
+    "react-transition-group": "^4.2.2",
     "typeface-inconsolata": "^0.0.72"
   },
   "devDependencies": {

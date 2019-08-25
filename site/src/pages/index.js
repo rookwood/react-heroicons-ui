@@ -7,6 +7,7 @@ import libPackageJson from "../../../lib/package.json";
 import Searcher from "../utils/search";
 import IconCard from "../components/IconCard";
 import SearchInput from "../components/SearchInput";
+import Modal from "../components/Modal";
 import { IconDetails } from "../components/IconDetails";
 
 const allIconNames = Object.keys(icons);
@@ -56,7 +57,6 @@ export default () => {
   return (
     <>
       <Seo />
-      {activeIcon != null && <Helmet bodyAttributes={{ class: "no-scroll" }} />}
       <div css={topColorStripeCss} />
       <div css={pageContainerStyles}>
         <SearchInput value={searchText} onChange={onInputChange} />
@@ -71,11 +71,12 @@ export default () => {
           ))}
         </ul>
       </div>
-      <IconDetails
-        iconName={activeIcon}
-        closeIcon={() => setActiveIcon(null)}
-        visible={activeIcon != null}
-      />
+      {activeIcon != null && (
+        <Modal onClose={() => setActiveIcon(null)}>
+          <IconDetails iconName={activeIcon} />
+        </Modal>
+      )}
+      <div id="modal-root"></div>
     </>
   );
 };
