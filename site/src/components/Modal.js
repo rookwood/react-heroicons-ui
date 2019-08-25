@@ -88,8 +88,11 @@ const Modal = ({ onClose, children }) => {
     setOpen(false);
   });
 
+  // There are three ways to close the modal:
+  // (1) Clicking on the X icon,
+  // (2) Pressing escape,
   useKeyboardShortcut(27, beginClosing);
-
+  // (3) and clicking outside the modal
   const innerContainerRef = useRef(null);
   useClickOutside(innerContainerRef, beginClosing);
 
