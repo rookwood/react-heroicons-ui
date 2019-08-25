@@ -70,20 +70,6 @@ const Modal = ({ onClose, children }) => {
     setOpen(true);
   }, []);
 
-  useEffect(() => {
-    let timeout = null;
-
-    if (!open) {
-      timeout = setTimeout(onClose, fadeTransitionDuration);
-    }
-
-    return () => {
-      if (timeout != null) {
-        clearTimeout(timeout);
-      }
-    };
-  }, [open]);
-
   const beginClosing = useCallback(() => {
     setOpen(false);
   });
@@ -103,6 +89,7 @@ const Modal = ({ onClose, children }) => {
         in={open}
         mountOnEnter
         unmountOnExit
+        onExited={onClose}
         classNames={fadeTransitionName}
         timeout={fadeTransitionDuration}
       >
