@@ -6,6 +6,14 @@ const cardCss = css`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 0.25rem;
+
+  &:hover {
+    background-color: var(--background-hover-color);
+  }
 
   svg {
     margin-bottom: 1rem;

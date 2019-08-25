@@ -10,13 +10,12 @@ import SearchInput from "../components/SearchInput";
 import { IconDetails } from "../components/IconDetails";
 
 const allIconNames = Object.keys(icons);
-const themeColor = `rgb(38, 132, 255)`;
 
 const topColorStripeCss = css`
   width: 100%;
   height: 2px;
 
-  background: ${themeColor};
+  background: var(--theme-color);
 `;
 
 const pageContainerStyles = css`
@@ -25,8 +24,9 @@ const pageContainerStyles = css`
 
 const listCss = css`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, 10rem);
+  grid-gap: 2rem 1rem;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
   list-style-type: none;
