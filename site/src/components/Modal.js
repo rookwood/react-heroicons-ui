@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 
 import useKeyboardShortcut from "../utils/useKeyboardShortcut";
 import useClickOutside from "../utils/useClickOutside";
+import { IconX } from "react-heroicons-ui";
 
 const fadeTransitionName = "fade";
 const fadeTransitionDuration = 300;
@@ -50,6 +51,16 @@ const modalInnerCss = css`
   height: 100%;
   background-color: var(--background-color);
   overflow-y: scroll;
+  position: relative;
+`;
+
+const closeButtonCss = css`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
 `;
 
 const Modal = ({ onClose, children }) => {
@@ -94,6 +105,7 @@ const Modal = ({ onClose, children }) => {
       >
         <div css={modalOuterCss}>
           <div css={modalInnerCss} ref={innerContainerRef}>
+            <IconX css={closeButtonCss} onClick={beginClosing} />
             {children}
           </div>
         </div>
