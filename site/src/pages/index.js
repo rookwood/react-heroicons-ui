@@ -7,6 +7,7 @@ import libPackageJson from "../../../lib/package.json";
 import Searcher from "../utils/search";
 import IconCard from "../components/IconCard";
 import SearchInput from "../components/SearchInput";
+import { IconDetails } from "../components/IconDetails";
 
 const allIconNames = Object.keys(icons);
 const themeColor = `rgb(38, 132, 255)`;
@@ -41,6 +42,7 @@ const Seo = () => (
 export default () => {
   const searcher = useMemo(() => new Searcher(allIconNames));
 
+  const [activeIcon, setActiveIcon] = useState(null);
   const [searchText, setSearchText] = useState("");
   const [searchResults, setSearchResults] = useState(allIconNames);
 
@@ -54,17 +56,26 @@ export default () => {
   return (
     <>
       <Seo />
+      {activeIcon != null && <Helmet bodyAttributes={{ class: "no-scroll" }} />}
       <div css={topColorStripeCss} />
       <div css={pageContainerStyles}>
         <SearchInput value={searchText} onChange={onInputChange} />
         <ul css={listCss}>
           {searchResults.map(iconName => (
             <li key={iconName}>
-              <IconCard iconName={iconName} />
+              <IconCard
+                iconName={iconName}
+                onClick={() => setActiveIcon(iconName)}
+              />
             </li>
           ))}
         </ul>
       </div>
+      <IconDetails
+        iconName={activeIcon}
+        closeIcon={() => setActiveIcon(null)}
+        visible={activeIcon != null}
+      />
     </>
   );
 };
